@@ -32,7 +32,8 @@
     "test:coverage": "cross-env NODE_ENV=test jest --collectCoverageFrom=\"src/**/*.js\" --coverage",
     "pretest": "npm run lint",
     "test": "cross-env NODE_ENV=test npm run test:coverage",
-    "defaults": "webpack-defaults"
+    "defaults": "webpack-defaults",
+    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls"
   },
   "files": [
     "dist/",
@@ -59,6 +60,7 @@
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
     "babel-jest": "^24.9.0",
     "commitlint-azure-pipelines-cli": "^1.0.2",
+    "coveralls": "^3.0.7",
     "cross-env": "^6.0.3",
     "del": "^5.1.0",
     "del-cli": "^3.0.0",

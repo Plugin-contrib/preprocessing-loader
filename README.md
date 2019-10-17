@@ -9,6 +9,7 @@
 [![deps][deps]][deps-url]
 [![cover][cover]][cover-url]
 [![size][size]][size-url]
+![npm](https://img.shields.io/npm/dm/preprocessing-loader)
 [![Build Status](https://travis-ci.org/anikethsaha/preprocessing-loader.svg?branch=master)](https://travis-ci.org/anikethsaha/preprocessing-loader)
 
 > ## This is an experimental project and still in development. Use it on your own risk!
