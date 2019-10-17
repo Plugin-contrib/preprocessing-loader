@@ -1,6 +1,6 @@
 const MIN_BABEL_VERSION = 7;
 
-module.exports = (api) => {
+module.exports = api => {
   api.assertVersion(MIN_BABEL_VERSION);
   api.cache(true);
 
@@ -10,10 +10,10 @@ module.exports = (api) => {
         '@babel/preset-env',
         {
           targets: {
-            node: '8.9.0',
-          },
-        },
-      ],
-    ],
+            node: '8.9.0'
+          }
+        }
+      ]
+    ]
   };
 };

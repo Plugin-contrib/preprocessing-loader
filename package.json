@@ -12,8 +12,7 @@
     "node": ">= 8.9.0"
   },
   "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "coverageDirectory": "./coverage/"
   },
   "scripts": {
     "start": "npm run build -- -w",
@@ -29,11 +28,12 @@
     "security": "npm audit",
     "test:only": "cross-env NODE_ENV=test jest",
     "test:watch": "cross-env NODE_ENV=test jest --watch",
-    "test:coverage": "cross-env NODE_ENV=test jest --collectCoverageFrom=\"src/**/*.js\" --coverage",
+    "test:coverage": "jest --coverage  ",
     "pretest": "npm run lint",
-    "test": "cross-env NODE_ENV=test npm run test:coverage",
+    "test": " npm run test:coverage",
     "defaults": "webpack-defaults",
-    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage:codecov": "npm run test:coverage && codecov"
   },
   "files": [
     "dist/",
@@ -59,6 +59,7 @@
     "@webpack-contrib/defaults": "^5.0.2",
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
     "babel-jest": "^24.9.0",
+    "codecov": "^3.6.1",
     "commitlint-azure-pipelines-cli": "^1.0.2",
     "coveralls": "^3.0.7",
     "cross-env": "^6.0.3",
