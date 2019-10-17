@@ -17,6 +17,65 @@
 
 [![Edit webpack-prepossessing-loader](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/webpack-prepossessing-loader-b6boi?fontsize=14)
 
+This is a simple loader, it will simply pre process few of the code which wont effect the normal execution of the program in the run time.
+It will pre process codes like these
+
+```js
+const a = 123;
+var whatsTheNumber = a;
+```
+
+Now this will convert into the following
+
+```js
+const a = 123;
+var whatsTheNumber = 123;
+```
+
+Why ? as `a` is `const` and its value will not change in the rest of the program, We can simply change all those variables which are assign using `a` with `a`'s value that is `123`
+
+> in future release, this line `const a = 123` will be removed from the output file as it doesnt have anything to do with the program after compiling using this loader
+
+Another example can be,
+
+```js
+const dumyFN = () => {
+  return 'demo';
+};
+
+console.log(dumyFN());
+```
+
+This code will convert into the following
+
+```js
+console.log('demo');
+```
+
+Preprocessing few codes like this increases the run time of the program as the program doesn't need to jump from one part to another to get the value of the variable.
+
+As of now, the support for pre processing is very limited with this loader, for example
+
+```js
+const obj = {
+  prop1: () => {
+    return 'value';
+  }
+};
+```
+
+This can be converted into this
+
+```js
+const obj = {
+  prop1: 'value'
+};
+```
+
+but this loader doesnt support this.
+_Support of this will be added in future_.
+function bodies where the return statements are wrapped with other statements like another function or if-statement or callbacks are not supported by this loader as of now. _Support of this will be added in future_
+
 ## Getting Started
 
 To begin, you'll need to install `preprocessing-loader`:
