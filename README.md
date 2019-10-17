@@ -99,10 +99,7 @@ module.exports = {
         test: /\.js$/,
         use: [
           {
-            loader: 'preprocessing-loader',
-            options: {
-              name: 'hello world'
-            }
+            loader: 'preprocessing-loader'
           }
         ]
       }
