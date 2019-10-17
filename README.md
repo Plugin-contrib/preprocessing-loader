@@ -122,17 +122,17 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 
 [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/webpack-prepossessing-loader.svg
-[npm-url]: https://npmjs.com/package/webpack-prepossessing-loader
-[node]: https://img.shields.io/node/v/webpack-prepossessing-loader.svg
+[npm]: https://img.shields.io/npm/v/webpack-preprocess-loader.svg
+[npm-url]: https://npmjs.com/package/webpack-preprocess-loader
+[node]: https://img.shields.io/node/v/webpack-preprocess-loader.svg
 [node-url]: https://nodejs.org
-[deps]: https://david-dm.org/webpack-contrib/webpack-prepossessing-loader.svg
-[deps-url]: https://david-dm.org/webpack-contrib/webpack-prepossessing-loader
-[tests]: https://dev.azure.com/webpack-contrib/webpack-prepossessing-loader/_apis/build/status/webpack-contrib.webpack-prepossessing-loader?branchName=master
-[tests-url]: https://dev.azure.com/webpack-contrib/webpack-prepossessing-loader/_build/latest?definitionId=2&branchName=master
-[cover]: https://codecov.io/gh/webpack-contrib/webpack-prepossessing-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/webpack-prepossessing-loader
+[deps]: https://david-dm.org/webpack-contrib/webpack-preprocess-loader.svg
+[deps-url]: https://david-dm.org/webpack-contrib/webpack-preprocess-loader
+[tests]: https://dev.azure.com/webpack-contrib/webpack-preprocess-loader/_apis/build/status/webpack-contrib.webpack-preprocess-loader?branchName=master
+[tests-url]: https://dev.azure.com/webpack-contrib/webpack-preprocess-loader/_build/latest?definitionId=2&branchName=master
+[cover]: https://codecov.io/gh/webpack-contrib/webpack-preprocess-loader/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/webpack-contrib/webpack-preprocess-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
-[size]: https://packagephobia.now.sh/badge?p=webpack-prepossessing-loader
-[size-url]: https://packagephobia.now.sh/result?p=webpack-prepossessing-loader
+[size]: https://packagephobia.now.sh/badge?p=webpack-preprocess-loader
+[size-url]: https://packagephobia.now.sh/result?p=webpack-preprocess-loader
