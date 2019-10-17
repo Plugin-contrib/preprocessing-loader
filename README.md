@@ -12,16 +12,14 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
-# webpack-prepossessing-loader
-
-
+# preprocess-loader
 
 ## Getting Started
 
-To begin, you'll need to install `webpack-prepossessing-loader`:
+To begin, you'll need to install `preprocess-loader`:
 
 ```console
-$ npm install webpack-prepossessing-loader --save-dev
+$ npm install preprocess-loader --save-dev
 ```
 
 <!-- isLoader ? use(this) : delete(isPlugin) -->
@@ -51,25 +49,13 @@ module.exports = {
         use: [
           {
             loader: `webpackprepossessing-loader`,
-            options: { ...options },
-          },
-        ],
-      },
-    ],
-  },
+            options: { ...options }
+          }
+        ]
+      }
+    ]
+  }
 };
-```
-
-<!-- isPlugin ? use(this) : delete(isLoader) -->
-
-**webpack.config.js**
-
-```js
-module.exports = {
-  plugins: [
-    new `WebpackPrepossessing`Plugin(options)
-  ]
-}
 ```
 
 And run `webpack` via your preferred method.
@@ -94,25 +80,11 @@ module.exports = {
       {
         loader: `webpackprepossessing-loader`,
         options: {
-          [option]: '',
-        },
-      },
-    ],
-  },
-};
-```
-
-<!-- isPlugin ? use(this) : delete(isLoader) -->
-
-**webpack.config.js**
-
-```js
-module.exports = {
-  plugins: [
-    new `WebpackPrepossessing`Plugin({
-      [option]: ''
-    })
-  ]
+          [option]: ''
+        }
+      }
+    ]
+  }
 };
 ```
 
