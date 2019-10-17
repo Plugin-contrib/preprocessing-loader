@@ -12,14 +12,14 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
-# preprocess-loader
+# webpack-preprocess-loader
 
 ## Getting Started
 
-To begin, you'll need to install `preprocess-loader`:
+To begin, you'll need to install `webpack-preprocess-loader`:
 
 ```console
-$ npm install preprocess-loader --save-dev
+$ npm install webpack-preprocess-loader --save-dev
 ```
 
 <!-- isLoader ? use(this) : delete(isPlugin) -->
