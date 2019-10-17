@@ -12,6 +12,8 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
+## > This is an experimental project and still in development. Use it on your own risk!
+
 # webpack-preprocess-loader
 
 ## Getting Started
