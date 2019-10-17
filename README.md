@@ -203,5 +203,5 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 [cover]: https://codecov.io/gh/anikethsaha/preprocessing-loader/branch/master/graph/badge.svg
 [cover-url]: https://codecov.io/gh/anikethsaha/preprocessing-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
-[size]: https://packagephobia.now.sh/badge?p=preprocessing-loader
-[size-url]: https://packagephobia.now.sh/result?p=preprocessing-loader
+[size]: https://badgen.net/bundlephobia/min/preprocessing-loader
+[size-url]: https://badgen.net/bundlephobia/min/preprocessing-loader

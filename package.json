@@ -11,6 +11,10 @@
   "engines": {
     "node": ">= 8.9.0"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "scripts": {
     "start": "npm run build -- -w",
     "prebuild": "npm run clean",
