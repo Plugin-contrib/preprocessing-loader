@@ -1,12 +1,12 @@
 {
-  "name": "webpack-preprocess-loader",
+  "name": "preprocessing-loader",
   "version": "0.0.1",
   "description": "A simple webpack loader to pre-process some part of code in compile time in order to speed up the runtime",
   "license": "MIT",
-  "repository": "webpack-preprocess-loader",
+  "repository": "preprocessing-loader",
   "author": "anikethsaha",
-  "homepage": "https://github.com/anikethsaha/webpack-preprocess-loader",
-  "bugs": "https://github.com/anikethsaha/webpack-preprocess-loader/issues",
+  "homepage": "https://github.com/anikethsaha/preprocessing-loader",
+  "bugs": "https://github.com/anikethsaha/preprocessing-loader/issues",
   "main": "dist/index.js",
   "engines": {
     "node": ">= 8.9.0"

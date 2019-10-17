@@ -12,16 +12,18 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
-## > This is an experimental project and still in development. Use it on your own risk!
+> ## This is an experimental project and still in development. Use it on your own risk!
 
-# webpack-preprocess-loader
+# preprocessing-loader
+
+[![Edit webpack-prepossessing-loader](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/webpack-prepossessing-loader-b6boi?fontsize=14)
 
 ## Getting Started
 
-To begin, you'll need to install `webpack-preprocess-loader`:
+To begin, you'll need to install `preprocessing-loader`:
 
 ```console
-$ npm install webpack-preprocess-loader --save-dev
+$ npm install preprocessing-loader --save-dev
 ```
 
 <!-- isLoader ? use(this) : delete(isPlugin) -->
@@ -122,17 +124,17 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 
 [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/webpack-preprocess-loader.svg
-[npm-url]: https://npmjs.com/package/webpack-preprocess-loader
-[node]: https://img.shields.io/node/v/webpack-preprocess-loader.svg
+[npm]: https://img.shields.io/npm/v/preprocessing-loader.svg
+[npm-url]: https://npmjs.com/package/preprocessing-loader
+[node]: https://img.shields.io/node/v/preprocessing-loader.svg
 [node-url]: https://nodejs.org
-[deps]: https://david-dm.org/webpack-contrib/webpack-preprocess-loader.svg
-[deps-url]: https://david-dm.org/webpack-contrib/webpack-preprocess-loader
-[tests]: https://dev.azure.com/webpack-contrib/webpack-preprocess-loader/_apis/build/status/webpack-contrib.webpack-preprocess-loader?branchName=master
-[tests-url]: https://dev.azure.com/webpack-contrib/webpack-preprocess-loader/_build/latest?definitionId=2&branchName=master
-[cover]: https://codecov.io/gh/webpack-contrib/webpack-preprocess-loader/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/webpack-preprocess-loader
+[deps]: https://david-dm.org/webpack-contrib/preprocessing-loader.svg
+[deps-url]: https://david-dm.org/webpack-contrib/preprocessing-loader
+[tests]: https://dev.azure.com/webpack-contrib/preprocessing-loader/_apis/build/status/webpack-contrib.preprocessing-loader?branchName=master
+[tests-url]: https://dev.azure.com/webpack-contrib/preprocessing-loader/_build/latest?definitionId=2&branchName=master
+[cover]: https://codecov.io/gh/webpack-contrib/preprocessing-loader/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/webpack-contrib/preprocessing-loader
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
-[size]: https://packagephobia.now.sh/badge?p=webpack-preprocess-loader
-[size-url]: https://packagephobia.now.sh/result?p=webpack-preprocess-loader
+[size]: https://packagephobia.now.sh/badge?p=preprocessing-loader
+[size-url]: https://packagephobia.now.sh/result?p=preprocessing-loader
