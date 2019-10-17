@@ -32,8 +32,8 @@
     "pretest": "npm run lint",
     "test": " npm run test:coverage",
     "defaults": "webpack-defaults",
-    "coveralls": "npm run test:coverage && cat ./coverage/lcov.info | coveralls",
-    "coverage:codecov": "npm run test:coverage && codecov"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coverage:codecov": "codecov"
   },
   "files": [
     "dist/",
