@@ -1,6 +1,6 @@
 {
   "name": "preprocessing-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple webpack loader to pre-process some part of code in compile time in order to speed up the runtime",
   "license": "MIT",
   "repository": "preprocessing-loader",
