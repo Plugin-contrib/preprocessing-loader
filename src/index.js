@@ -6,7 +6,6 @@ const generate = require('@babel/generator');
 const PreProcessingCompiler = require('./compiler');
 
 const loader = content => {
-  this.cacheable && this.cacheable();
   const node = parse(content);
   const compiler = new PreProcessingCompiler(node);
   node.program = compiler.transform(node.program);
