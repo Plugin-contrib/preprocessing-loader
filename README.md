@@ -13,7 +13,9 @@
 [![Build Status](https://travis-ci.org/anikethsaha/preprocessing-loader.svg?branch=master)](https://travis-ci.org/anikethsaha/preprocessing-loader)
 [![Coverage Status](https://coveralls.io/repos/github/anikethsaha/preprocessing-loader/badge.svg?branch=master)](https://coveralls.io/github/anikethsaha/preprocessing-loader?branch=master)
 
+
 > ## This is an experimental project and still in development. Use it on your own risk!
+
 
 # preprocessing-loader
 
@@ -77,6 +79,87 @@ const obj = {
 but this loader doesnt support this.
 _Support of this will be added in future_.
 function bodies where the return statements are wrapped with other statements like another function or if-statement or callbacks are not supported by this loader as of now. _Support of this will be added in future_
+
+### What it does ? using code example
+
+#### Input
+
+
+```js
+// Source code here...
+const v = 5;
+const z = 'a';
+function hello(x) {
+  console.log('hellox', x);
+}
+const tests = 5 + 2;
+const afn = () => {
+  return v;
+};
+const fn = function() {
+  return 'fn';
+};
+var a = v;
+let a2 = z;
+const fn2 = function() {
+  return a2;
+};
+hello(v);
+hello(z);
+
+const he = {
+  // Not supportable
+  what: () => {
+    return 'qwe';
+  }
+};
+
+const fntest = he.what(); //  needs to cover this !!!
+
+console.log('fntest', fntest);
+console.log('tests', tests);
+console.log('fn', fn());
+console.log('afn', afn());
+console.log('fn2', fn2());
+hello(afn());
+console.log('v', v);
+```
+
+#### Output
+
+```js
+// Bundle code here...
+function hello(x) {
+  console.log('hellox', x);
+}
+
+var a = 5;
+let a2 = 'a';
+
+const fn2 = function() {
+  return a2;
+};
+
+hello(5);
+hello('a');
+const he = {
+  // Not supportable
+  what: () => {
+    return 'qwe';
+  }
+};
+const fntest = he.what(); //  needs to cover this !!!
+
+console.log('fntest', fntest);
+console.log('tests', 7);
+console.log('fn', 'fn');
+console.log('afn', 5);
+console.log('fn2', fn2());
+hello(5);
+console.log('v', 5);
+```
+
+
 
 ## Getting Started
 
@@ -212,39 +295,13 @@ hello(afn());
 console.log('v', v);
 ```
 
-**bundle.js**
 
-```js
-// Bundle code here...
-function hello(x) {
-  console.log('hellox', x);
-}
-
-var a = 5;
-let a2 = 'a';
-
-const fn2 = function() {
-  return a2;
-};
-
-hello(5);
-hello('a');
-const he = {
-  // Not supportable
-  what: () => {
-    return 'qwe';
-  }
-};
-const fntest = he.what(); //  needs to cover this !!!
-
-console.log('fntest', fntest);
-console.log('tests', 7);
-console.log('fn', 'fn');
-console.log('afn', 5);
-console.log('fn2', fn2());
-hello(5);
-console.log('v', 5);
-```
+## Related
+- [`Babel/minify`](https://github.com/babel/minify/) got some number of babel plugins which are used for code optimization.
+  - `babel-plugin-minify-constant-folding`, `babel-plugin-minify-dead-code-elimination` somewhat does the same job in better way 
+- `v8` does this kind of code optimizations too using graphs (CFG)
+- google's closure compiler for javascript does this too with other optimizations features as well at a awesome level
+- There are other minifiers or code optimization libraries are present too which implements these approaches as well 
 
 ## Contributing
 
