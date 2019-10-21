@@ -14,7 +14,14 @@
 [![Coverage Status](https://coveralls.io/repos/github/anikethsaha/preprocessing-loader/badge.svg?branch=master)](https://coveralls.io/github/anikethsaha/preprocessing-loader?branch=master)
 
 
-> ## This is an experimental project and still in development. Use it on your own risk!
+---
+
+**NOTE**
+
+This is an experimental and learning project and still in development. Use it on your own risk!
+This would not work properly if you can reused variable or function names in different files.
+
+---
 
 
 # preprocessing-loader
