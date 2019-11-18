@@ -326,7 +326,7 @@ Please take a moment to read our contributing guidelines if you haven't yet done
 
 ## Author
 
-- [Aniketh Saha](https://twitter.com/__ANIX__)
+[Aniketh Saha](https://twitter.com/__ANIX__)
 
 [npm]: https://img.shields.io/npm/v/preprocessing-loader.svg
 [npm-url]: https://npmjs.com/package/preprocessing-loader
